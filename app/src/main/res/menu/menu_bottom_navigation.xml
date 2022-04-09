@@ -9,7 +9,7 @@
     <item
         android:id="@+id/action_compose"
         android:icon="@android:drawable/btn_star_big_on"
-        android:title="Favorited"
+        android:title="News"
         app:showAsAction="always" />
     <item
         android:id="@+id/action_profile"

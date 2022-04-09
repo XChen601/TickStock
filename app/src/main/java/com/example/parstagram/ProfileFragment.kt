@@ -1,24 +1,13 @@
-package com.example.parstagram.fragments
+package com.example.parstagram
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.example.parstagram.LoginActivity
-import com.example.parstagram.MainActivity
-import com.example.parstagram.Post
-import com.example.parstagram.R
-import com.parse.FindCallback
-import com.parse.ParseException
-import com.parse.ParseQuery
 import com.parse.ParseUser
 
 class ProfileFragment: Fragment() {
@@ -42,6 +31,16 @@ class ProfileFragment: Fragment() {
         view.findViewById<Button>(R.id.logoutBtn).setOnClickListener {
             logoutUser()
         }
+
+        view.findViewById<Button>(R.id.changeUsrBtn).setOnClickListener {
+            val intent = Intent(context, changeUsername::class.java)
+            startActivity(intent)
+        }
+
+        view.findViewById<Button>(R.id.changePWBtn).setOnClickListener {
+            val intent = Intent(activity, changeUsername::class.java)
+            startActivity(intent)
+        }
     }
 
     fun logoutUser(){
@@ -49,6 +48,7 @@ class ProfileFragment: Fragment() {
         val currentUser = ParseUser.getCurrentUser() // this will now be null
         goToLoginActivity()
     }
+
 
     private fun goToLoginActivity() {
         val intent = Intent(activity, LoginActivity::class.java)

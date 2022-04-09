@@ -4,9 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import com.example.parstagram.fragments.FavoriteFragment
-import com.example.parstagram.fragments.FeedFragment
-import com.example.parstagram.fragments.ProfileFragment
+import com.example.parstagram.FeedFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -27,7 +25,7 @@ class MainActivity : AppCompatActivity() {
                     fragmentToShow = FeedFragment()
                 }
                 R.id.action_compose -> {
-                    fragmentToShow = FavoriteFragment()
+                    fragmentToShow = NewsFragment()
                 }
                 R.id.action_profile -> {
                     fragmentToShow = ProfileFragment()

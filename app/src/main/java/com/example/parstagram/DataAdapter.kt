@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.content.Context
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,7 +12,7 @@ import com.example.parstagram.R
 class DataAdapter(private val context: Context, private val datas: List<Data>)
     : RecyclerView.Adapter<DataAdapter.ViewHolder>() {
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val tvName = itemView.findViewById<TextView>(R.id.tvName)
+        private val tvName = itemView.findViewById<TextView>(R.id.tvSymbol)
         private val tvOpen = itemView.findViewById<TextView>(R.id.tvOpen)
         private val tvClose = itemView.findViewById<TextView>(R.id.tvClose)
 
@@ -19,6 +20,16 @@ class DataAdapter(private val context: Context, private val datas: List<Data>)
             tvName.text = data.name
             tvOpen.text = data.open
             tvClose.text = data.close
+
+            if(data.open.toFloat() > data.close.toFloat()){
+                tvOpen.setTextColor(Color.parseColor("#00cf26"))
+                tvClose.setTextColor(Color.parseColor("#FF0000"))
+            } else {
+                tvClose.setTextColor(Color.parseColor("#00cf26"))
+                tvOpen.setTextColor(Color.parseColor("#FF0000"))
+            }
+
+
 
         }
     }

@@ -9,52 +9,67 @@
         android:id="@+id/logoutBtn"
         android:layout_width="246dp"
         android:layout_height="76dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#E60A0A"
         android:text="Log out"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/changePFP" />
 
     <TextView
         android:id="@+id/tvUsername"
-        android:layout_width="284dp"
-        android:layout_height="79dp"
+        android:layout_width="306dp"
+        android:layout_height="61dp"
         android:layout_marginTop="32dp"
-        android:text="Username"
-        android:textSize="45dp"
         android:gravity="center"
+        android:text="Username"
+        android:textColor="#272727"
+        android:textSize="38dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="118dp"
+        android:layout_height="110dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvUsername"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/ic_baseline_person_24"
+        tools:srcCompat="@drawable/ic_baseline_person_24" />
 
     <Button
         android:id="@+id/changeUsrBtn"
         android:layout_width="445dp"
         android:layout_height="64dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:text="Change Username"
+        android:backgroundTint="#00cf2d"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <Button
+        android:id="@+id/changePFP"
+        android:layout_width="445dp"
+        android:layout_height="64dp"
+        android:text="Change Icon"
+        android:backgroundTint="#00cf2d"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changePWBtn" />
 
     <Button
         android:id="@+id/changePWBtn"
         android:layout_width="445dp"
         android:layout_height="64dp"
         android:text="Change Password"
+        android:backgroundTint="#00cf2d"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"

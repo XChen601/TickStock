@@ -7,7 +7,6 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.example.parstagram.fragments.ProfileFragment
 import com.parse.ParseUser
 
 class LoginActivity : AppCompatActivity() {

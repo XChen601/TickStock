@@ -1,4 +1,4 @@
-package com.example.parstagram.fragments
+package com.example.parstagram
 
 import android.content.Intent
 import android.graphics.BitmapFactory
