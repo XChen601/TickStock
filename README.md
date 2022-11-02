@@ -18,7 +18,6 @@ A group repository for Android Codepath 2022 Course.
 An app that allows the user to view details of recent stocks, see news articles about recent stock information and edit their profile.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - Category: Finance
 - Mobile: This app would be developed for mobile but should also be available on a computer.
 - Story: Pulls stock data from Polygon.io API and allows users to view them.
@@ -41,8 +40,6 @@ Required Must-have Stories
 Optional Nice-to-have Stories
 * [x] Green or red depending if the price closed higher/lower
 * [x] Add colors
-* [ ] Sort-by option for the users
-* [ ] Allow user to edit username/password
 
 ### 2. Screen Archetypes
 
