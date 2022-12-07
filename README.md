@@ -120,7 +120,8 @@ Flow Navigation (Screen to Screen)
 * [x] Setting Up a Log in and Sign page user Parse
 * [x] Setting up fragments for the top stocks feed, profile, and favorited.
 * [x] Successfully managed to get information from api and goes on infininetly
-# Product Demo Video
+
+## Product Demo Video
 
 
 https://youtu.be/-ayMhmePOxQ
