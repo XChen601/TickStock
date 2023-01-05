@@ -9,7 +9,7 @@ A group repository for Android Codepath 2022 Course.
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
 2. [Schema](#Schema)
-2. [Product Demo Video](#Product Demo Video)
+2. [Product Demo Video](#Product-Demo-Video)
 
 
 
