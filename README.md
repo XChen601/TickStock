@@ -1,7 +1,3 @@
-# CodepathProject 
-A group repository for Android Codepath 2022 Course.
-===
-
 # TickStock
 
 ## Table of Contents
@@ -16,6 +12,10 @@ A group repository for Android Codepath 2022 Course.
 ## Overview
 ### Description
 An app that allows the user to view details of recent stocks, see news articles about recent stock information and edit their profile.
+
+![tickstock1](https://github.com/XChen601/TickStock/assets/72898664/556f5614-bb4e-4f09-b456-b7996c1d0c55)
+
+
 
 ### App Evaluation
 - Category: Finance
